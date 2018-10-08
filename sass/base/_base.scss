@@ -1,0 +1,13 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    // Root font-size para utilizar valores REM en base a 10px
+    // La formula es ( 10 / 16 ) ( 10px entre el valor default )
+}
