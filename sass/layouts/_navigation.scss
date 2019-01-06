@@ -17,6 +17,12 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
+
+        // Responsive for button navivation
+        @include respond(tab-port) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     // Background funcionality
@@ -30,6 +36,12 @@
         right: 6.5rem;
         z-index: 100;
         transition: transform .8s ease-in-out;
+
+        // Responsive for button background
+        @include respond(tab-port) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     // Navigation and links funcionality
