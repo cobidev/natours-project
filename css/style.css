@@ -550,7 +550,7 @@ body {
     @media (max-width: 75em) {
       .popup__left {
         width: 100%;
-        height: 35rem;
+        height: auto;
         float: none; } }
   .popup__right {
     float: right;

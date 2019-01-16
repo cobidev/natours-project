@@ -395,8 +395,21 @@
         <div class="popup__content">
             <a href="#section-tours" class="popup__close">&times;</a>
             <div class="popup__left">
-                <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+
+                <img
+                    src="./img/nat-8-large.jpg"
+                    srcset="./img/nat-8.jpg 300w, ./img/nat-8-large.jpg 2000w"
+                    sizes="(max-width: 900px) 45vh, (max-width: 600px) 80vh, 480px"
+                    alt="Tour photo"
+                    class="popup__img">
+                
+                <img
+                    src="./img/nat-9-large.jpg"
+                    srcset="./img/nat-9.jpg 300w, ./img/nat-9-large.jpg 2000w"
+                    sizes="(max-width: 900px) 45vh, (max-width: 600px) 80vh, 480px"
+                    alt="Tour photo"
+                    class="popup__img">
+
             </div>
             <div class="popup__right">
 
