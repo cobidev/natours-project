@@ -17,6 +17,10 @@
         max-width: 50rem;
     }
 
+    @include respond(phone-xs) {
+        max-width: 35rem;
+    }
+
     // COlUMNS STYLES:
 
     [class^="col-"] {

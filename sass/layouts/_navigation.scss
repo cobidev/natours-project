@@ -61,6 +61,11 @@
         list-style: none;
         text-align: center;
         @include centerTranslate;
+
+        // Responsive for navigation list
+        @include respond(phone-xs) {
+            width: 80%;
+        }
     }
 
     &__item {

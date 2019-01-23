@@ -35,6 +35,12 @@
         @include respond(phone) {
             transform: translateX(-3rem) skewX(0deg)
         }
+
+        @include respond(phone-xs) {
+            float: none;
+            left: 7rem;
+            margin-bottom: 2rem;
+        }
     }
 
     &__image {
