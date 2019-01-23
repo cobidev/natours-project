@@ -10,6 +10,13 @@
     visibility: hidden;
     transition: all .4s ease;
 
+    // Support css feature
+    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .3);
+    };
+
     &__content {
         @include centerTranslate;
 
@@ -46,10 +53,13 @@
         overflow: hidden;
 
         // Responsive for left content
-        @include respond(tab-land) {
+        @include respond(phone) {
             width: 100%;
-            height: auto;
             float: none;
+
+            & #popup_img_id {
+                display: none;
+            }
         }
     }
     
@@ -59,7 +69,7 @@
         padding: 3rem 5rem;
 
         // Responsive for right content
-        @include respond(tab-land) {
+        @include respond(phone) {
             width: 100%;
             float: none;
         }
@@ -68,14 +78,6 @@
     &__img {
         display: block;
         width: 100%;
-
-        // Responsive for image
-        @include respond(tab-land) {
-            display: inline-block;
-            width: calc(100% * (1/2));
-            height: 100%;
-            float: left;
-        }
 
         @include respond(phone) {
             display: block;
