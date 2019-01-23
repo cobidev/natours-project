@@ -10,7 +10,7 @@
     visibility: hidden;
     transition: all .4s ease;
 
-    // Support css feature
+    // Support CSS feature
     @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
